@@ -1,0 +1,208 @@
+body {
+    background-image:url("images/annie-spratt-xTaOPMa6wAE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h1, h2 {
+    font-family: 'Lobster Two', cursive; 
+}
+h1,h2,h3 {
+    margin:0.6875rem;
+    color:#178F70;
+}
+p, figcaption {
+    color:#0A4031;
+}
+h3, p, figcaption {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+#logo{
+    font-family: 'Lobster Two', cursive;
+    color: #178F70;
+    float: left;
+    border: 3px solid #178F70;
+    border-radius: 35px;
+    margin-left: 1.5rem;
+    padding: 0.2rem;
+}
+header nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    float:right;
+    margin-top:1rem;
+    padding:0;
+}
+nav li {
+    padding:1rem;
+    display: inline;
+}
+nav a {
+    font-size: 1.5rem;
+    font-weight:600;
+    text-decoration: none;
+    color:#178F70;
+}
+nav a:hover, a:active {
+    color:#0A4031;
+}
+
+/* About Me */
+
+#about-me {
+    width:100%;
+    min-height: 31.25rem;
+    clear:both;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-side {
+    height:31.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-image {
+    height:90%;
+    border: 1px solid transparent;
+    border-radius: 52px;
+}
+#more-info {
+    display: none;
+    max-width: 31.25rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+#more-info p {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.button {
+    width: 40%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #1AA27D;
+    color: azure;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+.button:hover {
+    background-color: #0A4031;
+    cursor: pointer;
+}
+
+/* Projects */
+#projects h2 {
+    margin: 2rem;
+}
+.projects-container {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image-container {
+   width: 50%;
+}
+figure {
+    display: none;
+    max-width: 100%;
+}
+figure img {
+ 
+    max-width:100%;
+    max-height:100%;
+}
+figcaption {
+    padding: 1rem;
+    font-size: 1.125rem;
+}
+.projects-container h3 {
+    padding: 2rem;
+}
+.projects-container h3:hover {
+    color: #0A4031;
+    cursor: pointer;
+}
+ /* Skills */
+
+ #skills h2 {
+     margin: 2rem;
+ }
+
+.skills-container > * ,.skills-container a > * {
+    font-size: 2rem;
+    width: 4rem;
+}
+
+/* Footer */
+footer {
+    margin: 1.5rem;
+}
+footer p {
+    padding: 1rem;
+    font-size:1.25rem;
+    font-weight:600;
+}
+footer a {
+    color:#178F70;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #0A4031;
+}
+/*Contact */
+#contact h1 {
+    clear: both;
+}
+#contact p {
+    font-size: 1.25rem;
+}
+.skills-container a {
+    color:#1AA27D;
+}
+.skills-container a:hover{
+    color:#0A4031;
+}
+/* Responsive design */
+@media screen and (max-width: 960px) {
+    #about-me, .projects-container{
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+     }
+     header nav ul{
+         clear: both;
+         float: none;
+     }
+     nav li {
+         display: block;
+     }
+     nav a {
+         font-size: 2.5rem;
+     }
+}
